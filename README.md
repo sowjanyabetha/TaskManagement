@@ -13,10 +13,11 @@ This is a task management project created using Next.js and Firebase. It allows 
 
 To set up the project locally, follow these steps:
 
-Clone the repository:
+# Clone the repository:
 
    ```bash
    git clone <repository_url>
+```
 
 # Install dependencies:
 ```

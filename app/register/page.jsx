@@ -12,8 +12,7 @@ export default function Register() {
         const {email, password} = e.target.elements;
         createUserWithEmailAndPassword(auth, email.value, password.value)
             .then((userCredential) => {
-                const user = userCredential.user;
-                window.alert("Successfully created user");
+                window.alert("Successfully Signed Up");
                 router.push("/dashboard");
             })
             .catch((error) => {
@@ -34,7 +33,7 @@ export default function Register() {
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" name="password"/>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">SignUp</button>
                 <div className="my-3">
                     <Link href={"/"} className="my-3">existing user? Login</Link>
                 </div>

@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { auth } from "@/firebase";
 import { signOut } from "firebase/auth";
@@ -36,7 +37,7 @@ export default function Header() {
         <div>
             <nav className="navbar bg-body-tertiary" data-bs-theme="dark">
                 <div className="container">
-                    <a className="navbar-brand">Task Management</a>
+                <Link href={"/dashboard"} className="navbar-brand">Task Management</Link>
                     {isLoggedIn && (
                         <button className="btn btn-outline-success mx-2" onClick={handleLogoutClick}>Logout</button>
                     )}

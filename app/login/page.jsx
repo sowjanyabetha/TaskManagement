@@ -20,7 +20,6 @@ export default function Login() {
                 router.push("/dashboard");
             })
             .catch((error) => {
-                const errorCode = error.code;
                 const errorMessage = error.message;
                 window.alert("Error while Logging in" + errorMessage);
             });
@@ -39,9 +38,9 @@ export default function Login() {
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" name="password" />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Login</button>
                 <div className="my-3">
-                    <Link href={"/register"} className="my-3">new user? Register</Link>
+                    <Link href={"/register"} className="my-3">new user? SignUp</Link>
                 </div>
             </form>
         </div>

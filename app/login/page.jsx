@@ -17,7 +17,7 @@ export default function Login() {
                 // Signed in 
                 const user = userCredential.user;
                 window.alert("Successfully logged in");
-                router.push("/tasks");
+                router.push("/dashboard");
             })
             .catch((error) => {
                 const errorCode = error.code;

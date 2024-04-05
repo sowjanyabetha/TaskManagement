@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase";
+import { useRouter } from "next/navigation";
 
 export default function Register() {
+    const router = useRouter();
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -12,6 +14,7 @@ export default function Register() {
             .then((userCredential) => {
                 const user = userCredential.user;
                 window.alert("Successfully created user");
+                router.push("/dashboard");
             })
             .catch((error) => {
                 const errorMessage = error.message;

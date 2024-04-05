@@ -16,7 +16,7 @@ To set up the project locally, follow these steps:
 # Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/sowjanyabetha/TaskManagement.git
 ```
 
 # Install dependencies:
@@ -43,9 +43,3 @@ To access the application, users need to sign up for an account.
 Once signed up, users can log in to access their tasks.
 Users can create, update, and delete tasks.
 Users can filter and view tasks based on different statuses (e.g., Todo, In Progress, Done).
-
-# Technologies Used
-Next.js 13
-Firebase (Authentication, Firestore)
-React.js
-HTML/CSS

@@ -15,7 +15,6 @@ export default function Dashboard() {
             if (snapshot.exists()) {
                 console.log("Task Output", snapshot.val());
                 const data = snapshot.val();
-                
                 // const taskArray = Object.values(data);
                 const taskArray = Object.entries(data).map(([taskId, task]) => ({ id: taskId, ...task }));
                 console.log("taskArray: ", taskArray);

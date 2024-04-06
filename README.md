@@ -22,7 +22,9 @@ To set up the project locally, follow these steps:
 # Install dependencies:
 ```
 cd task-management-project
-npm install
+npm install next
+npm install bootstrap
+npm install -g firebase-tools
 ```
 
 # Set up Firebase:

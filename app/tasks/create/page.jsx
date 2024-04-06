@@ -26,7 +26,7 @@ export default function CreateTask() {
         router.push("/dashboard");
     }
 
-    const handleCancel = () => {
+    const handleCancel = (e) => {
         e.preventDefault();
         router.push("/dashboard");
     }
@@ -59,7 +59,7 @@ export default function CreateTask() {
                 </div>
 
                 <div className="d-flex mt-3">
-                    <button type="submit" className="btn btn-success">Create New Task</button>
+                    <button type="submit" className="btn btn-success mx-3">Create New Task</button>
                     <button className="btn btn-outline-secondary" onClick={handleCancel}>Cancel</button>
                 </div>
             </form>

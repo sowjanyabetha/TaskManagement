@@ -13,9 +13,8 @@ export default function Login() {
 
         const { email, password } = e.target.elements;
         signInWithEmailAndPassword(auth, email.value, password.value)
-            .then((userCredential) => {
+            .then(() => {
                 // Signed in 
-                const user = userCredential.user;
                 window.alert("Successfully logged in");
                 router.push("/dashboard");
             })

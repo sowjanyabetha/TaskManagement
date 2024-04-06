@@ -11,7 +11,7 @@ export default function Register() {
 
         const {email, password} = e.target.elements;
         createUserWithEmailAndPassword(auth, email.value, password.value)
-            .then((userCredential) => {
+            .then(() => {
                 window.alert("Successfully Signed Up");
                 router.push("/dashboard");
             })
